@@ -7,203 +7,204 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white">
-    <!-- Navigation -->
-    <nav class="sticky top-0 bg-white shadow-sm z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-amber-900">BookHaven</a>
-            <div class="flex gap-8 items-center">
-                <a href="./index.html" class="text-gray-700 hover:text-amber-900 transition">Home</a>
-                <a href="./browse.html" class="text-gray-700 hover:text-amber-900 transition">Browse Books</a>
-                <a href="./about-us.html" class="text-amber-900 font-semibold">About Us</a>
-                <a href="contact.html" class="text-gray-700 hover:text-amber-900 transition">Contact</a>
-                <div class="relative">
-                    <button onclick="toggleCart()" class="text-gray-700 hover:text-amber-900 transition">
-                        🛒
-                    </button>
-                    <span id="cartCount" class="absolute -top-2 -right-2 bg-amber-900 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
-                </div>
+<!-- Navigation -->
+<nav class="sticky top-0 bg-white shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="./index.html" class="text-2xl font-bold text-gray-900">BookHaven</a>
+        <div class="flex gap-8 items-center">
+            <a href="./index.html" class="text-gray-700 hover:text-amber-900 transition">Home</a>
+            <a href="./browse.html" class="text-gray-700 hover:text-amber-900 transition">Browse Books</a>
+            <a href="./about.html" class="from-blue-900 font-semibold">About Us</a>
+            <a href="./contact.html" class="text-gray-700 hover:text-amber-900 transition">Contact</a>
+            <div class="relative">
+                <button onclick="toggleCart()" class="text-gray-700 hover:text-amber-900 transition">🛒</button>
+                <span id="cartCount" class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
             </div>
         </div>
-    </nav>
+    </div>
+</nav>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-amber-50 to-orange-50 py-16">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h1 class="text-5xl font-bold text-amber-900 mb-6">About BookHaven</h1>
-            <p class="text-xl text-gray-700 max-w-2xl mx-auto">Discover the story behind your favorite online bookstore</p>
-        </div>
-    </section>
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-blue-100 py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <h1 class="text-5xl font-bold text-gray-900 mb-6">About BookHaven</h1>
+        <p class="text-xl text-gray-700 max-w-2xl mx-auto">Discover the story behind your favorite online bookstore</p>
+    </div>
+</section>
 
-    <!-- Our Story Section -->
-    <section class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
-                <div>
-                    <h2 class="text-4xl font-bold text-amber-900 mb-6">Our Story</h2>
-                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
-                        Founded in 2015, BookHaven began as a passion project by a group of book lovers who believed everyone deserves access to quality literature at affordable prices.
-                    </p>
-                    <p class="text-gray-700 text-lg leading-relaxed mb-4">
-                        What started as a small local bookshop has grown into a thriving online community of readers from around the world. Today, we curate over 50,000 titles across all genres and deliver them to thousands of happy readers every month.
-                    </p>
-                    <p class="text-gray-700 text-lg leading-relaxed">
-                        Our mission remains simple: to make great books accessible, affordable, and enjoyable for everyone.
-                    </p>
-                </div>
-                <div class="bg-amber-100 rounded-lg h-80 flex items-center justify-center">
-                    <img src="/placeholder.svg?height=400&width=400" alt="BookHaven bookstore" class="w-full h-full object-cover rounded-lg">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Values Section -->
-    <section class="bg-gray-50 py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-amber-900 text-center mb-12">Our Values</h2>
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
-                    <div class="text-4xl mb-4">📚</div>
-                    <h3 class="text-xl font-bold text-amber-900 mb-3">Quality Selection</h3>
-                    <p class="text-gray-700">We carefully curate every book in our collection to ensure you're getting the best reading experiences available.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
-                    <div class="text-4xl mb-4">💰</div>
-                    <h3 class="text-xl font-bold text-amber-900 mb-3">Fair Pricing</h3>
-                    <p class="text-gray-700">We believe great books shouldn't be expensive. We negotiate directly with publishers to bring you the best prices.</p>
-                </div>
-                <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
-                    <div class="text-4xl mb-4">🤝</div>
-                    <h3 class="text-xl font-bold text-amber-900 mb-3">Community First</h3>
-                    <p class="text-gray-700">Our readers are at the heart of everything we do. We listen, learn, and continuously improve based on your feedback.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Team Section -->
-    <section class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <h2 class="text-4xl font-bold text-amber-900 text-center mb-12">Meet Our Team</h2>
-            <div class="grid md:grid-cols-4 gap-8">
-                <div class="text-center">
-                    <div class="bg-amber-200 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
-                        <img src="/placeholder.svg?height=128&width=128" alt="Sarah Chen" class="w-full h-full object-cover rounded-full">
-                    </div>
-                    <h3 class="text-lg font-bold text-amber-900">Sarah Chen</h3>
-                    <p class="text-gray-600">Founder & CEO</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-amber-200 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
-                        <img src="/placeholder.svg?height=128&width=128" alt="Marcus Johnson" class="w-full h-full object-cover rounded-full">
-                    </div>
-                    <h3 class="text-lg font-bold text-amber-900">Marcus Johnson</h3>
-                    <p class="text-gray-600">Operations Manager</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-amber-200 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
-                        <img src="/placeholder.svg?height=128&width=128" alt="Emma Rodriguez" class="w-full h-full object-cover rounded-full">
-                    </div>
-                    <h3 class="text-lg font-bold text-amber-900">Emma Rodriguez</h3>
-                    <p class="text-gray-600">Curation Lead</p>
-                </div>
-                <div class="text-center">
-                    <div class="bg-amber-200 rounded-full w-32 h-32 mx-auto mb-4 flex items-center justify-center">
-                        <img src="/placeholder.svg?height=128&width=128" alt="David Park" class="w-full h-full object-cover rounded-full">
-                    </div>
-                    <h3 class="text-lg font-bold text-amber-900">David Park</h3>
-                    <p class="text-gray-600">Customer Success</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Stats Section -->
-    <section class="bg-amber-900 text-white py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-4 gap-8 text-center">
-                <div>
-                    <div class="text-4xl font-bold mb-2">50,000+</div>
-                    <p class="text-amber-100">Books Available</p>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">100,000+</div>
-                    <p class="text-amber-100">Happy Readers</p>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">150+</div>
-                    <p class="text-amber-100">Countries Served</p>
-                </div>
-                <div>
-                    <div class="text-4xl font-bold mb-2">10 Years</div>
-                    <p class="text-amber-100">In Business</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="bg-gradient-to-br from-amber-50 to-orange-50 py-16">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h2 class="text-3xl font-bold text-amber-900 mb-6">Join the BookHaven Community</h2>
-            <p class="text-xl text-gray-700 mb-8">Discover your next favorite book today</p>
-            <a href="browse-books.html" class="inline-block bg-amber-900 text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-800 transition">
-                Browse Our Collection →
-            </a>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 mb-8">
+<!-- Our Story Section -->
+<section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
             <div>
-                <h4 class="text-white font-bold mb-4">BookHaven</h4>
-                <p class="text-sm">Your destination for discovering and purchasing the finest collection of books across all genres.</p>
+                <h2 class="text-4xl font-bold text-gray-900 mb-6">Our Story</h2>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    Founded in 2015, BookHaven began as a passion project by a group of book lovers who believed everyone deserves access to quality literature at affordable prices.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                    What started as a small local bookshop has grown into a thriving online community of readers from around the world. Today, we curate over 50,000 titles across all genres and deliver them to thousands of happy readers every month.
+                </p>
+                <p class="text-gray-700 text-lg leading-relaxed">
+                    Our mission remains simple: to make great books accessible, affordable, and enjoyable for everyone.
+                </p>
             </div>
-            <div>
-                <h4 class="text-white font-bold mb-4">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-                    <li><a href="browse-books.html" class="hover:text-white transition">Browse Books</a></li>
-                    <li><a href="about-us.html" class="hover:text-white transition">About Us</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4">Categories</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:text-white transition">Fiction</a></li>
-                    <li><a href="#" class="hover:text-white transition">Non-Fiction</a></li>
-                    <li><a href="#" class="hover:text-white transition">Self-Help</a></li>
-                    <li><a href="#" class="hover:text-white transition">Children's</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4">Contact</h4>
-                <ul class="space-y-2 text-sm">
-                    <li>(+885) 123-4567</li>
-                    <li>info@bookhaven.com</li>
-                    <li>123 Book Street, Cambodia</li>
-                </ul>
+            <div class="bg-amber-100 rounded-lg h-80 flex items-center justify-center">
+                <img src="https://i.pinimg.com/736x/a3/f1/c3/a3f1c32ac4bfb8c4755d04e6d43b8f73.jpg" alt="BookHaven bookstore" class="w-full h-full object-cover rounded-lg">
             </div>
         </div>
-        <div class="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>©2025 BookHaven. All rights reserved.</p>
+    </div>
+</section>
+
+<!-- Values Section -->
+<section class="bg-gray-50 py-16">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-black text-center mb-12">Our Values</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="text-4xl mb-4">📚</div>
+                <h3 class="text-xl font-bold text-black  mb-3">Quality Selection</h3>
+                <p class="text-gray-700">We carefully curate every book in our collection to ensure you're getting the best reading experiences available.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="text-4xl mb-4">💰</div>
+                <h3 class="text-xl font-bold text-black  mb-3">Fair Pricing</h3>
+                <p class="text-gray-700">We believe great books shouldn't be expensive. We negotiate directly with publishers to bring you the best prices.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg shadow-sm hover:shadow-md transition">
+                <div class="text-4xl mb-4">🤝</div>
+                <h3 class="text-xl font-bold text-black  mb-3">Community First</h3>
+                <p class="text-gray-700">Our readers are at the heart of everything we do. We listen, learn, and continuously improve based on your feedback.</p>
+            </div>
         </div>
-    </footer>
+    </div>
+</section>
 
-    <script>
-        function toggleCart() {
-            alert('Cart functionality - Ready to explore more books?');
-        }
+<!-- Team Section -->
+<section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-4">
+        <h2 class="text-4xl font-bold text-black text-center mb-12">Meet Our Team</h2>
+        <div class="grid sm:grid-cols-1 md:grid-cols-3 gap-12 justify-items-center">
 
-        // Initialize cart count
-        function updateCartCount() {
-            const count = localStorage.getItem('cartCount') || 0;
-            document.getElementById('cartCount').textContent = count;
-        }
+            <!-- Team Member 1 -->
+            <div class="text-center">
+                <div class="bg-amber-200 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden flex items-center justify-center">
+                    <img src="img/sliden.jpg" alt="You Chehnintchesda" class="w-full h-full object-cover rounded-full">
+                </div>
+                <h3 class="text-lg font-bold text-black">You Chehnintchesda</h3>
+                <p class="text-gray-600">Plan maker & Project Planner</p>
+            </div>
 
-        updateCartCount();
-    </script>
+            <!-- Team Member 2 -->
+            <div class="text-center">
+                <div class="bg-amber-200 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden flex items-center justify-center">
+                    <img src="img/vicheese.jpg" alt="Tho Vicheka" class="w-full h-full object-cover rounded-full">
+                </div>
+                <h3 class="text-lg font-bold text-black ">Tho Vicheka</h3>
+                <p class="text-gray-600">Contributor</p>
+            </div>
+
+            <!-- Team Member 3 -->
+            <div class="text-center">
+                <div class="bg-amber-200 rounded-full w-32 h-32 mx-auto mb-4 overflow-hidden flex items-center justify-center">
+                    <img src="img/hengsovannreach.jpg" alt="Heng Sovannreach" class="w-full h-full object-cover rounded-full">
+                </div>
+                <h3 class="text-lg font-bold text-black ">Heng Sovannreach</h3>
+                <p class="text-gray-600">Contributor</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Stats Section -->
+<section class="w-full bg-cream3 py-20">
+    <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center mb-14">What We Achieved</h2>
+        <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-10">
+            <div class="bg-white p-8 rounded-xl shadow-md text-center hover:-translate-y-1 transition duration-200">
+                <h3 class="text-4xl font-bold mb-2">50K+</h3>
+                <p class="text-lg">Books Available</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md text-center hover:-translate-y-1 transition duration-200">
+                <h3 class="text-4xl font-bold mb-2">168 Store</h3>
+                <p class="text-lg">Across Asia and Europe</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md text-center hover:-translate-y-1 transition duration-200">
+                <h3 class="text-4xl font-bold mb-2">Books in 25</h3>
+                <p class="text-lg">Different Languages</p>
+            </div>
+            <div class="bg-white p-8 rounded-xl shadow-md text-center hover:-translate-y-1 transition duration-200">
+                <h3 class="text-4xl font-bold mb-2">Top 10</h3>
+                <p class="text-lg">World-Wide</p>
+                <p class="text-lg">4.7 Reviews on Average</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="bg-gradient-to-br from-blue-100 to-orange-50 py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-black  mb-6">Join the BookHaven Community</h2>
+        <p class="text-xl text-gray-700 mb-8">Discover your next favorite book today</p>
+        <a href="./browse.html" class="inline-block bg-black  text-white px-8 py-3 rounded-lg font-semibold hover:bg-amber-800 transition">
+            Browse Our Collection →
+        </a>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+            <h4 class="text-white font-bold mb-4">BookHaven</h4>
+            <p class="text-sm">A reader lives a thousand lives before he dies... The man who never reads lives only one</p>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="./index.html" class="hover:text-white transition">Home</a></li>
+                <li><a href="./browse.html" class="hover:text-white transition">Browse Books</a></li>
+                <li><a href="./about.html" class="hover:text-white transition">About Us</a></li>
+                <li><a href="./contact.html" class="hover:text-white transition">Contact</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-4">Categories</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white transition">Fiction</a></li>
+                <li><a href="#" class="hover:text-white transition">Non-Fiction</a></li>
+                <li><a href="#" class="hover:text-white transition">Self-Help</a></li>
+                <li><a href="#" class="hover:text-white transition">Children's</a></li>
+            </ul>
+        </div>
+        <div>
+            <h4 class="text-white font-bold mb-4">Contact</h4>
+            <ul class="space-y-2 text-sm">
+                <li>(+885) 085618725</li>
+                <li>info@bookhaven.com</li>
+                <li>123 Book Street, Cambodia</li>
+            </ul>
+        </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 text-center text-sm">
+        <p>©2025 BookHaven. All rights reserved.</p>
+    </div>
+</footer>
+
+<script>
+    function toggleCart() {
+        alert('Cart functionality - Ready to explore more books?');
+    }
+
+    // Initialize cart count
+    function updateCartCount() {
+        const count = localStorage.getItem('cartCount') || 0;
+        document.getElementById('cartCount').textContent = count;
+    }
+
+    updateCartCount();
+</script>
 </body>
 </html>
+
