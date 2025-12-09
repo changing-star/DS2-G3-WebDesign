@@ -7,250 +7,250 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white">
-    <!-- Navigation -->
-    <nav class="sticky top-0 bg-white shadow-sm z-50">
-        <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-            <a href="index.html" class="text-2xl font-bold text-amber-900">BookHaven</a>
-            <div class="flex gap-8 items-center">
-                <a href="./index.html" class="text-gray-700 hover:text-amber-900 transition">Home</a>
-                <a href="./browse-books.html" class="text-gray-700 hover:text-amber-900 transition">Browse Books</a>
-                <a href="./about.html" class="text-gray-700 hover:text-amber-900 transition">About Us</a>
-                <a href="./contact.html" class="text-amber-900 font-semibold">Contact</a>
-                <div class="relative">
-                    <button onclick="toggleCart()" class="text-gray-700 hover:text-amber-900 transition">
-                        🛒
+<!-- Navigation -->
+<nav class="sticky top-0 bg-white shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-bold text-black">BookHaven</a>
+        <div class="flex gap-8 items-center">
+            <a href="./index.html" class="text-gray-700 hover:text-amber-900 transition">Home</a>
+            <a href="./browse.html" class="text-gray-700 hover:text-amber-900 transition">Browse Books</a>
+            <a href="./about.html" class="text-gray-700 hover:text-amber-900 transition">About Us</a>
+            <a href="./contact.html" class="text-black font-semibold">Contact</a>
+            <div class="relative">
+                <button onclick="toggleCart()" class="text-gray-700 hover:text-black transition">
+                    🛒
+                </button>
+                <span id="cartCount" class="absolute -top-2 -right-2 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="bg-gradient-to-br from-blue-100  py-16">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <h1 class="text-5xl font-bold text-black mb-6">Contact Us</h1>
+        <p class="text-xl text-gray-700 max-w-2xl mx-auto">We'd love to hear from you. Get in touch with our team</p>
+    </div>
+</section>
+
+<!-- Contact Info & Form Section -->
+<section class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12">
+            <!-- Contact Information -->
+            <div>
+                <h2 class="text-3xl font-bold text-black mb-8">Get in Touch</h2>
+
+                <div class="mb-8">
+                    <h3 class="text-lg font-bold text-black mb-3 flex items-center gap-3">
+                        📞 Phone
+                    </h3>
+                    <p class="text-gray-700 text-lg">(+885) 123-4567</p>
+                    <p class="text-gray-600 text-sm">Mon - Fri: 9am - 6pm (UTC+7)</p>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-lg font-bold text-black mb-3 flex items-center gap-3">
+                        ✉️ Email
+                    </h3>
+                    <p class="text-gray-700 text-lg">info@bookhaven.com</p>
+                    <p class="text-gray-600 text-sm">We respond within 24 hours</p>
+                </div>
+
+                <div class="mb-8">
+                    <h3 class="text-lg font-bold text-black mb-3 flex items-center gap-3">
+                        📍 Address
+                    </h3>
+                    <p class="text-gray-700 text-lg">123 Book Street</p>
+                    <p class="text-gray-700">Phnom Penh, Cambodia</p>
+                </div>
+
+                <div class="bg-blue-100 p-6 rounded-lg mt-8">
+                    <h3 class="font-bold text-amber-900 mb-3">Business Hours</h3>
+                    <ul class="text-gray-700 space-y-2 text-sm">
+                        <li><span class="font-semibold">Monday - Friday:</span> 9:00am - 6:00pm</li>
+                        <li><span class="font-semibold">Saturday:</span> 10:00am - 4:00pm</li>
+                        <li><span class="font-semibold">Sunday:</span> Closed</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div>
+                <form id="contactForm" class="bg-gray-50 p-8 rounded-lg">
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Full Name *</label>
+                        <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-900" placeholder="Your name">
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Email Address *</label>
+                        <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-900" placeholder="your@email.com">
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Phone (Optional)</label>
+                        <input type="tel" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-900" placeholder="(+885) 123-4567">
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Subject *</label>
+                        <select name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-900">
+                            <option value="">Select a subject</option>
+                            <option value="general">General Inquiry</option>
+                            <option value="order">Order Support</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="feedback">Feedback</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-6">
+                        <label class="block text-gray-700 font-semibold mb-2">Message *</label>
+                        <textarea name="message" required rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-900" placeholder="Tell us how we can help..."></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-blue-500 text-white py-3 rounded-lg font-semibold hover:bg-blue-800 transition">
+                        Send Message
                     </button>
-                    <span id="cartCount" class="absolute -top-2 -right-2 bg-amber-900 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                </form>
+                <div id="successMessage" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
+                    Thank you! Your message has been sent successfully. We'll get back to you soon.
                 </div>
             </div>
         </div>
-    </nav>
+    </div>
+</section>
 
-    <!-- Hero Section -->
-    <section class="bg-gradient-to-br from-amber-50 to-orange-50 py-16">
-        <div class="max-w-6xl mx-auto px-4 text-center">
-            <h1 class="text-5xl font-bold text-amber-900 mb-6">Contact Us</h1>
-            <p class="text-xl text-gray-700 max-w-2xl mx-auto">We'd love to hear from you. Get in touch with our team</p>
-        </div>
-    </section>
+<!-- FAQ Section -->
+<section class="bg-gray-50 py-16">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold text-black text-center mb-12">Frequently Asked Questions</h2>
 
-    <!-- Contact Info & Form Section -->
-    <section class="py-16">
-        <div class="max-w-6xl mx-auto px-4">
-            <div class="grid md:grid-cols-2 gap-12">
-                <!-- Contact Information -->
-                <div>
-                    <h2 class="text-3xl font-bold text-amber-900 mb-8">Get in Touch</h2>
-                    
-                    <div class="mb-8">
-                        <h3 class="text-lg font-bold text-amber-900 mb-3 flex items-center gap-3">
-                            📞 Phone
-                        </h3>
-                        <p class="text-gray-700 text-lg">(+885) 123-4567</p>
-                        <p class="text-gray-600 text-sm">Mon - Fri: 9am - 6pm (UTC+7)</p>
-                    </div>
-
-                    <div class="mb-8">
-                        <h3 class="text-lg font-bold text-amber-900 mb-3 flex items-center gap-3">
-                            ✉️ Email
-                        </h3>
-                        <p class="text-gray-700 text-lg">info@bookhaven.com</p>
-                        <p class="text-gray-600 text-sm">We respond within 24 hours</p>
-                    </div>
-
-                    <div class="mb-8">
-                        <h3 class="text-lg font-bold text-amber-900 mb-3 flex items-center gap-3">
-                            📍 Address
-                        </h3>
-                        <p class="text-gray-700 text-lg">123 Book Street</p>
-                        <p class="text-gray-700">Phnom Penh, Cambodia</p>
-                    </div>
-
-                    <div class="bg-amber-50 p-6 rounded-lg mt-8">
-                        <h3 class="font-bold text-amber-900 mb-3">Business Hours</h3>
-                        <ul class="text-gray-700 space-y-2 text-sm">
-                            <li><span class="font-semibold">Monday - Friday:</span> 9:00am - 6:00pm</li>
-                            <li><span class="font-semibold">Saturday:</span> 10:00am - 4:00pm</li>
-                            <li><span class="font-semibold">Sunday:</span> Closed</li>
-                        </ul>
-                    </div>
+        <div class="space-y-4">
+            <div class="bg-white p-6 rounded-lg cursor-pointer faq-item" onclick="toggleFAQ(this)">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-black">How long does shipping take?</h3>
+                    <span class="text-2xl text-amber-900">+</span>
                 </div>
+                <p class="text-gray-700 mt-4 hidden faq-answer">We offer standard shipping (5-7 business days) and express shipping (2-3 business days). Shipping times may vary depending on your location.</p>
+            </div>
 
-                <!-- Contact Form -->
-                <div>
-                    <form id="contactForm" class="bg-gray-50 p-8 rounded-lg">
-                        <div class="mb-6">
-                            <label class="block text-gray-700 font-semibold mb-2">Full Name *</label>
-                            <input type="text" name="name" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-900" placeholder="Your name">
-                        </div>
-
-                        <div class="mb-6">
-                            <label class="block text-gray-700 font-semibold mb-2">Email Address *</label>
-                            <input type="email" name="email" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-900" placeholder="your@email.com">
-                        </div>
-
-                        <div class="mb-6">
-                            <label class="block text-gray-700 font-semibold mb-2">Phone (Optional)</label>
-                            <input type="tel" name="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-900" placeholder="(+885) 123-4567">
-                        </div>
-
-                        <div class="mb-6">
-                            <label class="block text-gray-700 font-semibold mb-2">Subject *</label>
-                            <select name="subject" required class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-900">
-                                <option value="">Select a subject</option>
-                                <option value="general">General Inquiry</option>
-                                <option value="order">Order Support</option>
-                                <option value="partnership">Partnership</option>
-                                <option value="feedback">Feedback</option>
-                                <option value="other">Other</option>
-                            </select>
-                        </div>
-
-                        <div class="mb-6">
-                            <label class="block text-gray-700 font-semibold mb-2">Message *</label>
-                            <textarea name="message" required rows="5" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-900" placeholder="Tell us how we can help..."></textarea>
-                        </div>
-
-                        <button type="submit" class="w-full bg-amber-900 text-white py-3 rounded-lg font-semibold hover:bg-amber-800 transition">
-                            Send Message
-                        </button>
-                    </form>
-                    <div id="successMessage" class="hidden mt-4 p-4 bg-green-100 text-green-700 rounded-lg">
-                        Thank you! Your message has been sent successfully. We'll get back to you soon.
-                    </div>
+            <div class="bg-white p-6 rounded-lg cursor-pointer faq-item" onclick="toggleFAQ(this)">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-black">Do you accept returns?</h3>
+                    <span class="text-2xl text-amber-900">+</span>
                 </div>
+                <p class="text-gray-700 mt-4 hidden faq-answer">Yes! We accept returns within 30 days of purchase. Books must be in their original condition for a full refund.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg cursor-pointer faq-item" onclick="toggleFAQ(this)">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-black">What payment methods do you accept?</h3>
+                    <span class="text-2xl text-amber-900">+</span>
+                </div>
+                <p class="text-gray-700 mt-4 hidden faq-answer">We accept all major credit cards, PayPal, bank transfers, and select digital wallets. All transactions are secure and encrypted.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg cursor-pointer faq-item" onclick="toggleFAQ(this)">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-black">Can I track my order?</h3>
+                    <span class="text-2xl text-amber-900">+</span>
+                </div>
+                <p class="text-gray-700 mt-4 hidden faq-answer">Once your order ships, you'll receive a tracking number via email. You can monitor delivery status in real-time.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg cursor-pointer faq-item" onclick="toggleFAQ(this)">
+                <div class="flex justify-between items-center">
+                    <h3 class="text-lg font-bold text-black">Do you ship internationally?</h3>
+                    <span class="text-2xl text-amber-900">+</span>
+                </div>
+                <p class="text-gray-700 mt-4 hidden faq-answer">Yes, we ship to over 150 countries worldwide. Shipping costs and delivery times vary by location. Contact us for international rates.</p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- FAQ Section -->
-    <section class="bg-gray-50 py-16">
-        <div class="max-w-4xl mx-auto px-4">
-            <h2 class="text-3xl font-bold text-amber-900 text-center mb-12">Frequently Asked Questions</h2>
-            
-            <div class="space-y-4">
-                <div class="bg-white p-6 rounded-lg cursor-pointer faq-item" onclick="toggleFAQ(this)">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-lg font-bold text-amber-900">How long does shipping take?</h3>
-                        <span class="text-2xl text-amber-900">+</span>
-                    </div>
-                    <p class="text-gray-700 mt-4 hidden faq-answer">We offer standard shipping (5-7 business days) and express shipping (2-3 business days). Shipping times may vary depending on your location.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg cursor-pointer faq-item" onclick="toggleFAQ(this)">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-lg font-bold text-amber-900">Do you accept returns?</h3>
-                        <span class="text-2xl text-amber-900">+</span>
-                    </div>
-                    <p class="text-gray-700 mt-4 hidden faq-answer">Yes! We accept returns within 30 days of purchase. Books must be in their original condition for a full refund.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg cursor-pointer faq-item" onclick="toggleFAQ(this)">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-lg font-bold text-amber-900">What payment methods do you accept?</h3>
-                        <span class="text-2xl text-amber-900">+</span>
-                    </div>
-                    <p class="text-gray-700 mt-4 hidden faq-answer">We accept all major credit cards, PayPal, bank transfers, and select digital wallets. All transactions are secure and encrypted.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg cursor-pointer faq-item" onclick="toggleFAQ(this)">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-lg font-bold text-amber-900">Can I track my order?</h3>
-                        <span class="text-2xl text-amber-900">+</span>
-                    </div>
-                    <p class="text-gray-700 mt-4 hidden faq-answer">Once your order ships, you'll receive a tracking number via email. You can monitor delivery status in real-time.</p>
-                </div>
-
-                <div class="bg-white p-6 rounded-lg cursor-pointer faq-item" onclick="toggleFAQ(this)">
-                    <div class="flex justify-between items-center">
-                        <h3 class="text-lg font-bold text-amber-900">Do you ship internationally?</h3>
-                        <span class="text-2xl text-amber-900">+</span>
-                    </div>
-                    <p class="text-gray-700 mt-4 hidden faq-answer">Yes, we ship to over 150 countries worldwide. Shipping costs and delivery times vary by location. Contact us for international rates.</p>
-                </div>
-            </div>
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 mb-8">
+        <div>
+            <h4 class="text-white font-bold mb-4">BookHaven</h4>
+            <p class="text-sm">Your destination for discovering and purchasing the finest collection of books across all genres.</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 py-12">
-        <div class="max-w-6xl mx-auto px-4 grid md:grid-cols-4 gap-8 mb-8">
-            <div>
-                <h4 class="text-white font-bold mb-4">BookHaven</h4>
-                <p class="text-sm">Your destination for discovering and purchasing the finest collection of books across all genres.</p>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4">Quick Links</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="index.html" class="hover:text-white transition">Home</a></li>
-                    <li><a href="browse.html" class="hover:text-white transition">Browse Books</a></li>
-                    <li><a href="about-us.html" class="hover:text-white transition">About Us</a></li>
-                    <li><a href="contact.html" class="hover:text-white transition">Contact</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4">Categories</h4>
-                <ul class="space-y-2 text-sm">
-                    <li><a href="#" class="hover:text-white transition">Fiction</a></li>
-                    <li><a href="#" class="hover:text-white transition">Non-Fiction</a></li>
-                    <li><a href="#" class="hover:text-white transition">Self-Help</a></li>
-                    <li><a href="#" class="hover:text-white transition">Children's</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="text-white font-bold mb-4">Contact</h4>
-                <ul class="space-y-2 text-sm">
-                    <li>(+885) 123-4567</li>
-                    <li>info@bookhaven.com</li>
-                    <li>123 Book Street, Cambodia</li>
-                </ul>
-            </div>
+        <div>
+            <h4 class="text-white font-bold mb-4">Quick Links</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="./index.html" class="hover:text-white transition">Home</a></li>
+                <li><a href="./browse.html" class="hover:text-white transition">Browse Books</a></li>
+                <li><a href="./about.html" class="hover:text-white transition">About Us</a></li>
+                <li><a href="./contact.html" class="hover:text-white transition">Contact</a></li>
+            </ul>
         </div>
-        <div class="border-t border-gray-800 pt-8 text-center text-sm">
-            <p>©2025 BookHaven. All rights reserved.</p>
+        <div>
+            <h4 class="text-white font-bold mb-4">Categories</h4>
+            <ul class="space-y-2 text-sm">
+                <li><a href="#" class="hover:text-white transition">Fiction</a></li>
+                <li><a href="#" class="hover:text-white transition">Non-Fiction</a></li>
+                <li><a href="#" class="hover:text-white transition">Self-Help</a></li>
+                <li><a href="#" class="hover:text-white transition">Children's</a></li>
+            </ul>
         </div>
-    </footer>
+        <div>
+            <h4 class="text-white font-bold mb-4">Contact</h4>
+            <ul class="space-y-2 text-sm">
+                <li>(+885) 123-4567</li>
+                <li>info@bookhaven.com</li>
+                <li>123 Book Street, Cambodia</li>
+            </ul>
+        </div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 text-center text-sm">
+        <p>©2025 BookHaven. All rights reserved.</p>
+    </div>
+</footer>
 
-    <script>
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formData = new FormData(this);
-            console.log('[v0] Form submitted with data:', Object.fromEntries(formData));
-            
-            // Show success message
-            document.getElementById('contactForm').style.display = 'none';
-            document.getElementById('successMessage').classList.remove('hidden');
-            
-            // Reset after 5 seconds
-            setTimeout(() => {
-                document.getElementById('contactForm').reset();
-                document.getElementById('contactForm').style.display = 'block';
-                document.getElementById('successMessage').classList.add('hidden');
-            }, 5000);
-        });
+<script>
+    // Form submission
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+        e.preventDefault();
 
-        // FAQ Toggle
-        function toggleFAQ(element) {
-            const answer = element.querySelector('.faq-answer');
-            const icon = element.querySelector('span');
-            
-            answer.classList.toggle('hidden');
-            icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
-        }
+        const formData = new FormData(this);
+        console.log('[v0] Form submitted with data:', Object.fromEntries(formData));
 
-        function toggleCart() {
-            alert('Cart functionality - Ready to explore more books?');
-        }
+        // Show success message
+        document.getElementById('contactForm').style.display = 'none';
+        document.getElementById('successMessage').classList.remove('hidden');
 
-        // Initialize cart count
-        function updateCartCount() {
-            const count = localStorage.getItem('cartCount') || 0;
-            document.getElementById('cartCount').textContent = count;
-        }
+        // Reset after 5 seconds
+        setTimeout(() => {
+            document.getElementById('contactForm').reset();
+            document.getElementById('contactForm').style.display = 'block';
+            document.getElementById('successMessage').classList.add('hidden');
+        }, 5000);
+    });
 
-        updateCartCount();
-    </script>
+    // FAQ Toggle
+    function toggleFAQ(element) {
+        const answer = element.querySelector('.faq-answer');
+        const icon = element.querySelector('span');
+
+        answer.classList.toggle('hidden');
+        icon.textContent = answer.classList.contains('hidden') ? '+' : '−';
+    }
+
+    function toggleCart() {
+        alert('Cart functionality - Ready to explore more books?');
+    }
+
+    // Initialize cart count
+    function updateCartCount() {
+        const count = localStorage.getItem('cartCount') || 0;
+        document.getElementById('cartCount').textContent = count;
+    }
+
+    updateCartCount();
+</script>
 </body>
 </html>

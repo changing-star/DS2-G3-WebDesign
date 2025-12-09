@@ -8,313 +8,313 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-gray-50">
-    <!-- Navigation -->
-    <nav class="sticky top-0 z-50 bg-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-16">
-                <div class="flex items-center gap-8">
-                    <a href="index.html" class="text-2xl font-bold text-amber-700">BookHaven</a>
-                    <div class="hidden md:flex gap-6">
-                        <a href="index.html" class="text-gray-700 hover:text-amber-700 transition">Home</a>
-                        <a href="browse.html" class="text-amber-700 font-semibold">Browse Books</a>
-                        <a href="./about.html" class="text-gray-700 hover:text-amber-700 transition">About Us</a>
-                        <a href="./contact.html" class="text-gray-700 hover:text-amber-700 transition">Contact</a>
-                    </div>
-                </div>
-                <div class="flex items-center gap-4">
-                    <div class="relative hidden sm:block">
-                        <input type="text" id="searchInput" placeholder="Search books..." class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-700 w-48">
-                    </div>
-                    <button id="cartBtn" class="relative p-2 hover:bg-gray-100 rounded-lg transition">
-                        <i class="fas fa-shopping-cart text-xl text-gray-700"></i>
-                        <span id="cartCount" class="absolute top-0 right-0 bg-amber-700 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
-                    </button>
+<!-- Navigation -->
+<nav class="sticky top-0 z-50 bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex items-center gap-8">
+                <a href="./index.html" class="text-2xl font-bold text-black">BookHaven</a>
+                <div class="hidden md:flex gap-6">
+                    <a href="./index.html" class="text-gray-700 hover:text-amber-700 transition">Home</a>
+                    <a href="./browse.html" class="text-blue font-semibold">Browse Books</a>
+                    <a href="./about.html" class="text-gray-700 hover:text-amber-700 transition">About Us</a>
+                    <a href="./contact.html" class="text-gray-700 hover:text-amber-700 transition">Contact</a>
                 </div>
             </div>
-        </div>
-    </nav>
-
-    <!-- Page Header -->
-    <div class="bg-gradient-to-r from-amber-700 to-amber-600 text-white py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h1 class="text-4xl font-bold mb-2">Browse Our Collection</h1>
-            <p class="text-amber-50">Discover thousands of books across all genres</p>
+            <div class="flex items-center gap-4">
+                <div class="relative hidden sm:block">
+                    <input type="text" id="searchInput" placeholder="Search books..." class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-700 w-48">
+                </div>
+                <button id="cartBtn" class="relative p-2 hover:bg-gray-100 rounded-lg transition">
+                    <i class="fas fa-shopping-cart text-xl text-gray-700"></i>
+                    <span id="cartCount" class="absolute top-0 right-0 bg-black text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">0</span>
+                </button>
+            </div>
         </div>
     </div>
+</nav>
 
-    <!-- Main Content -->
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
-            <!-- Filters Sidebar -->
-            <div class="lg:col-span-1">
-                <div class="bg-white p-6 rounded-lg shadow-md sticky top-24">
-                    <h3 class="text-lg font-semibold mb-6 text-gray-900">Filters</h3>
-                    
-                    <!-- Genre Filter -->
-                    <div class="mb-6">
-                        <h4 class="font-semibold text-gray-900 mb-3">Genre</h4>
-                        <div class="space-y-2">
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" class="genre-filter" value="all" checked>
-                                <span class="ml-2 text-gray-700">All Genres</span>
-                            </label>
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" class="genre-filter" value="fiction">
-                                <span class="ml-2 text-gray-700">Fiction</span>
-                            </label>
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" class="genre-filter" value="self-help">
-                                <span class="ml-2 text-gray-700">Self-Help</span>
-                            </label>
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" class="genre-filter" value="history">
-                                <span class="ml-2 text-gray-700">History</span>
-                            </label>
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" class="genre-filter" value="mystery">
-                                <span class="ml-2 text-gray-700">Mystery</span>
-                            </label>
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" class="genre-filter" value="romance">
-                                <span class="ml-2 text-gray-700">Romance</span>
-                            </label>
-                        </div>
+<!-- Page Header -->
+<div class="bg-blue-100 to-amber-600 text-black py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 class="text-4xl font-bold mb-2">Browse Our Collection</h1>
+        <p class="text-black">Discover thousands of books across all genres</p>
+    </div>
+</div>
+
+<!-- Main Content -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+        <!-- Filters Sidebar -->
+        <div class="lg:col-span-1">
+            <div class="bg-white p-6 rounded-lg shadow-md sticky top-24">
+                <h3 class="text-lg font-semibold mb-6 text-gray-900">Filters</h3>
+
+                <!-- Genre Filter -->
+                <div class="mb-6">
+                    <h4 class="font-semibold text-gray-900 mb-3">Genre</h4>
+                    <div class="space-y-2">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="checkbox" class="genre-filter" value="all" checked>
+                            <span class="ml-2 text-gray-700">All Genres</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="checkbox" class="genre-filter" value="fiction">
+                            <span class="ml-2 text-gray-700">Fiction</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="checkbox" class="genre-filter" value="self-help">
+                            <span class="ml-2 text-gray-700">Self-Help</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="checkbox" class="genre-filter" value="history">
+                            <span class="ml-2 text-gray-700">History</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="checkbox" class="genre-filter" value="mystery">
+                            <span class="ml-2 text-gray-700">Mystery</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="checkbox" class="genre-filter" value="romance">
+                            <span class="ml-2 text-gray-700">Romance</span>
+                        </label>
                     </div>
+                </div>
 
-                    <!-- Price Range Filter -->
-                    <div class="mb-6">
-                        <h4 class="font-semibold text-gray-900 mb-3">Price Range</h4>
-                        <input type="range" id="priceRange" min="0" max="50" value="50" class="w-full">
-                        <p class="text-sm text-gray-600 mt-2">Up to $<span id="priceValue">50</span></p>
+                <!-- Price Range Filter -->
+                <div class="mb-6">
+                    <h4 class="font-semibold text-gray-900 mb-3">Price Range</h4>
+                    <input type="range" id="priceRange" min="0" max="50" value="50" class="w-full">
+                    <p class="text-sm text-gray-600 mt-2">Up to $<span id="priceValue">50</span></p>
+                </div>
+
+                <!-- Rating Filter -->
+                <div class="mb-6">
+                    <h4 class="font-semibold text-gray-900 mb-3">Rating</h4>
+                    <div class="space-y-2">
+                        <label class="flex items-center cursor-pointer">
+                            <input type="checkbox" class="rating-filter" value="5">
+                            <span class="ml-2 text-gray-700">★★★★★ 5 Stars</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="checkbox" class="rating-filter" value="4">
+                            <span class="ml-2 text-gray-700">★★★★☆ 4+ Stars</span>
+                        </label>
+                        <label class="flex items-center cursor-pointer">
+                            <input type="checkbox" class="rating-filter" value="3">
+                            <span class="ml-2 text-gray-700">★★★☆☆ 3+ Stars</span>
+                        </label>
                     </div>
+                </div>
 
-                    <!-- Rating Filter -->
-                    <div class="mb-6">
-                        <h4 class="font-semibold text-gray-900 mb-3">Rating</h4>
-                        <div class="space-y-2">
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" class="rating-filter" value="5">
-                                <span class="ml-2 text-gray-700">★★★★★ 5 Stars</span>
-                            </label>
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" class="rating-filter" value="4">
-                                <span class="ml-2 text-gray-700">★★★★☆ 4+ Stars</span>
-                            </label>
-                            <label class="flex items-center cursor-pointer">
-                                <input type="checkbox" class="rating-filter" value="3">
-                                <span class="ml-2 text-gray-700">★★★☆☆ 3+ Stars</span>
-                            </label>
-                        </div>
-                    </div>
+                <!-- Clear Filters -->
+                <button id="clearFilters" class="w-full bg-gray-200 text-gray-900 py-2 rounded-lg hover:bg-gray-300 transition font-semibold">Clear Filters</button>
+            </div>
+        </div>
 
-                    <!-- Clear Filters -->
-                    <button id="clearFilters" class="w-full bg-gray-200 text-gray-900 py-2 rounded-lg hover:bg-gray-300 transition font-semibold">Clear Filters</button>
+        <!-- Books Grid -->
+        <div class="lg:col-span-3">
+            <!-- Sort & View Options -->
+            <div class="flex justify-between items-center mb-8">
+                <p class="text-gray-600">Showing <span id="bookCount">0</span> books</p>
+                <div class="flex gap-3">
+                    <select id="sortSelect" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-700">
+                        <option value="featured">Featured</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                        <option value="rating">Highest Rated</option>
+                        <option value="newest">Newest</option>
+                    </select>
                 </div>
             </div>
 
             <!-- Books Grid -->
-            <div class="lg:col-span-3">
-                <!-- Sort & View Options -->
-                <div class="flex justify-between items-center mb-8">
-                    <p class="text-gray-600">Showing <span id="bookCount">0</span> books</p>
-                    <div class="flex gap-3">
-                        <select id="sortSelect" class="px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-amber-700">
-                            <option value="featured">Featured</option>
-                            <option value="price-low">Price: Low to High</option>
-                            <option value="price-high">Price: High to Low</option>
-                            <option value="rating">Highest Rated</option>
-                            <option value="newest">Newest</option>
-                        </select>
-                    </div>
-                </div>
+            <div id="booksGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Books will be populated by JavaScript -->
+            </div>
 
-                <!-- Books Grid -->
-                <div id="booksGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-                    <!-- Books will be populated by JavaScript -->
-                </div>
-
-                <!-- No Results -->
-                <div id="noResults" class="hidden text-center py-12">
-                    <i class="fas fa-search text-4xl text-gray-300 mb-4"></i>
-                    <p class="text-gray-500 text-lg">No books found. Try adjusting your filters.</p>
-                </div>
+            <!-- No Results -->
+            <div id="noResults" class="hidden text-center py-12">
+                <i class="fas fa-search text-4xl text-gray-300 mb-4"></i>
+                <p class="text-gray-500 text-lg">No books found. Try adjusting your filters.</p>
             </div>
         </div>
     </div>
+</div>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-300 mt-16">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div>
-                    <h3 class="text-white font-bold text-lg mb-4">BookHaven</h3>
-                    <p class="text-sm">Your destination for discovering and purchasing the finest collection of books.</p>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="index.html" class="hover:text-amber-700">Home</a></li>
-                        <li><a href="browse-books.html" class="hover:text-amber-700">Browse Books</a></li>
-                        <li><a href="#" class="hover:text-amber-700">About Us</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Contact</h4>
-                    <ul class="space-y-2 text-sm">
-                        <li>(+885) 123-4567</li>
-                        <li>info@bookhaven.com</li>
-                        <li>123 Book Street, Cambodia</li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Follow Us</h4>
-                    <div class="flex gap-4">
-                        <a href="#" class="hover:text-amber-700"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="hover:text-amber-700"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="hover:text-amber-700"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div>
+                <h3 class="text-white font-bold text-lg mb-4">BookHaven</h3>
+                <p class="text-sm">Your destination for discovering and purchasing the finest collection of books.</p>
             </div>
-            <div class="border-t border-gray-800 pt-8 text-center text-sm">
-                <p>©2025 BookHaven. All rights reserved.</p>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="./index.html" class="hover:text-amber-700">Home</a></li>
+                    <li><a href="./browse.html" class="hover:text-amber-700">Browse Books</a></li>
+                    <li><a href="#" class="hover:text-amber-700">About Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Contact</h4>
+                <ul class="space-y-2 text-sm">
+                    <li>(+885) 123-4567</li>
+                    <li>info@bookhaven.com</li>
+                    <li>123 Book Street, Cambodia</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-4">Follow Us</h4>
+                <div class="flex gap-4">
+                    <a href="#" class="hover:text-amber-700"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="hover:text-amber-700"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="hover:text-amber-700"><i class="fab fa-instagram"></i></a>
+                </div>
             </div>
         </div>
-    </footer>
-
-    <!-- Cart Modal -->
-    <div id="cartModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
-        <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
-            <div class="flex justify-between items-center mb-6">
-                <h2 class="text-2xl font-bold text-gray-900">Shopping Cart</h2>
-                <button id="closeCart" class="text-gray-600 hover:text-gray-900"><i class="fas fa-times text-xl"></i></button>
-            </div>
-            <div id="cartItems" class="space-y-4 mb-6 max-h-64 overflow-y-auto">
-                <!-- Cart items will be populated by JavaScript -->
-            </div>
-            <div class="border-t pt-4 mb-6">
-                <div class="flex justify-between font-semibold text-gray-900">
-                    <span>Total:</span>
-                    <span>$<span id="cartTotal">0.00</span></span>
-                </div>
-            </div>
-            <button class="w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800 transition font-semibold mb-3">Checkout</button>
-            <button id="clearCart" class="w-full bg-gray-200 text-gray-900 py-2 rounded-lg hover:bg-gray-300 transition">Clear Cart</button>
+        <div class="border-t border-gray-800 pt-8 text-center text-sm">
+            <p>©2025 BookHaven. All rights reserved.</p>
         </div>
     </div>
+</footer>
 
-    <script>
-        // Sample Book Data
-        const books = [
-            { id: 1, title: 'Milk and Honey', author: 'Rupi Kaur', genre: 'fiction', price: 18.99, rating: 5, badge: 'Bestseller', image: '/placeholder.svg?height=300&width=200' },
-            { id: 2, title: 'Atomic Habits', author: 'James Clear', genre: 'self-help', price: 27.99, rating: 4.5, badge: 'Bestseller', image: '/placeholder.svg?height=300&width=200' },
-            { id: 3, title: 'The Midnight Library', author: 'Matt Haig', genre: 'fiction', price: 24.99, rating: 4.7, badge: '', image: '/placeholder.svg?height=300&width=200' },
-            { id: 4, title: 'Sapiens', author: 'Yuval Noah Harari', genre: 'history', price: 29.99, rating: 4.3, badge: '', image: '/placeholder.svg?height=300&width=200' },
-            { id: 5, title: 'The Silent Patient', author: 'Alex Michaelides', genre: 'mystery', price: 22.99, rating: 4.3, badge: '', image: '/placeholder.svg?height=300&width=200' },
-            { id: 6, title: 'Educated', author: 'Tara Westover', genre: 'history', price: 19.99, rating: 4.8, badge: 'Bestseller', image: '/placeholder.svg?height=300&width=200' },
-            { id: 7, title: 'The Four Winds', author: 'Kristin Hannah', genre: 'fiction', price: 21.99, rating: 4.6, badge: '', image: '/placeholder.svg?height=300&width=200' },
-            { id: 8, title: 'It Ends with Us', author: 'Colleen Hoover', genre: 'romance', price: 17.99, rating: 4.7, badge: 'Bestseller', image: '/placeholder.svg?height=300&width=200' },
-            { id: 9, title: 'The Therapist', author: 'B.A. Paris', genre: 'mystery', price: 20.99, rating: 4.4, badge: '', image: '/placeholder.svg?height=300&width=200' },
-            { id: 10, title: 'Mindset', author: 'Carol S. Dweck', genre: 'self-help', price: 18.99, rating: 4.5, badge: 'Bestseller', image: '/placeholder.svg?height=300&width=200' },
-            { id: 11, title: 'The Thursday Murder Club', author: 'Richard Osman', genre: 'fiction', price: 23.99, rating: 4.8, badge: '', image: '/placeholder.svg?height=300&width=200' },
-            { id: 12, title: 'Never Split the Difference', author: 'Chris Voss', genre: 'self-help', price: 26.99, rating: 4.6, badge: '', image: '/placeholder.svg?height=300&width=200' },
-        ];
+<!-- Cart Modal -->
+<div id="cartModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+    <div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-900">Shopping Cart</h2>
+            <button id="closeCart" class="text-gray-600 hover:text-gray-900"><i class="fas fa-times text-xl"></i></button>
+        </div>
+        <div id="cartItems" class="space-y-4 mb-6 max-h-64 overflow-y-auto">
+            <!-- Cart items will be populated by JavaScript -->
+        </div>
+        <div class="border-t pt-4 mb-6">
+            <div class="flex justify-between font-semibold text-gray-900">
+                <span>Total:</span>
+                <span>$<span id="cartTotal">0.00</span></span>
+            </div>
+        </div>
+        <button class="w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800 transition font-semibold mb-3">Checkout</button>
+        <button id="clearCart" class="w-full bg-gray-200 text-gray-900 py-2 rounded-lg hover:bg-gray-300 transition">Clear Cart</button>
+    </div>
+</div>
 
-        let cart = [];
-        let filteredBooks = [...books];
+<script>
+    // Sample Book Data
+    const books = [
+        { id: 1, title: 'Milk and Honey', author: 'Rupi Kaur', genre: 'fiction', price: 18.99, rating: 5, badge: 'Bestseller', image: 'https://i.pinimg.com/736x/89/f6/46/89f64650364bfe372168200135c87be2.jpg' },
+        { id: 2, title: 'Atomic Habits', author: 'James Clear', genre: 'self-help', price: 27.99, rating: 4.5, badge: 'Bestseller', image: 'https://i.pinimg.com/1200x/39/d9/d6/39d9d620d911c59cddd87302a2810bc3.jpg' },
+        { id: 3, title: 'The Midnight Library', author: 'Matt Haig', genre: 'fiction', price: 24.99, rating: 4.7, badge: '', image: 'https://i.pinimg.com/736x/59/b5/2c/59b52c57f514e19c690954ec6e4d6451.jpg' },
+        { id: 4, title: 'Sapiens', author: 'Yuval Noah Harari', genre: 'history', price: 29.99, rating: 4.3, badge: '', image: 'https://i.pinimg.com/736x/6d/72/31/6d723162bdef9ea7a5af126af666d19d.jpg' },
+        { id: 5, title: 'The Silent Patient', author: 'Alex Michaelides', genre: 'mystery', price: 22.99, rating: 4.3, badge: '', image: 'https://i.pinimg.com/736x/54/50/bb/5450bb97b095a8d7d75a840a2708cbe2.jpg' },
+        { id: 6, title: 'Educated', author: 'Tara Westover', genre: 'history', price: 19.99, rating: 4.8, badge: 'Bestseller', image: 'https://i.pinimg.com/736x/00/0c/4a/000c4ad73f0f7930c1240dba7f2f50d0.jpg' },
+        { id: 7, title: 'The Four Winds', author: 'Kristin Hannah', genre: 'fiction', price: 21.99, rating: 4.6, badge: '', image: 'https://i.pinimg.com/736x/a2/bb/2c/a2bb2cd6c9e202b28fc1e08f1a4d7a7f.jpg' },
+        { id: 8, title: 'It Ends with Us', author: 'Colleen Hoover', genre: 'romance', price: 17.99, rating: 4.7, badge: 'Bestseller', image: 'https://i.pinimg.com/736x/a6/0f/76/a60f764bbf06586a83c984989e82d77c.jpg' },
+        { id: 9, title: 'The Therapist', author: 'B.A. Paris', genre: 'mystery', price: 20.99, rating: 4.4, badge: '', image: 'https://i.pinimg.com/736x/73/17/90/7317907487153df6c3b0218468a40931.jpg' },
+        { id: 10, title: 'Mindset', author: 'Carol S. Dweck', genre: 'self-help', price: 18.99, rating: 4.5, badge: 'Bestseller', image: 'https://i.pinimg.com/1200x/dc/f0/63/dcf063f7d618b49ea58944964fbc6d19.jpg' },
+        { id: 11, title: 'The Thursday Murder Club', author: 'Richard Osman', genre: 'fiction', price: 23.99, rating: 4.8, badge: '', image: 'https://i.pinimg.com/736x/de/19/5a/de195ab034443634bb8844857e1fbf44.jpg' },
+        { id: 12, title: 'Never Split the Difference', author: 'Chris Voss', genre: 'self-help', price: 26.99, rating: 4.6, badge: '', image: 'https://i.pinimg.com/736x/0f/2c/98/0f2c9839d253e85ba0addb8a30d2c593.jpg' },
+    ];
 
-        // DOM Elements
-        const booksGrid = document.getElementById('booksGrid');
-        const noResults = document.getElementById('noResults');
-        const bookCount = document.getElementById('bookCount');
-        const genreFilters = document.querySelectorAll('.genre-filter');
-        const ratingFilters = document.querySelectorAll('.rating-filter');
-        const priceRange = document.getElementById('priceRange');
-        const priceValue = document.getElementById('priceValue');
-        const sortSelect = document.getElementById('sortSelect');
-        const searchInput = document.getElementById('searchInput');
-        const clearFiltersBtn = document.getElementById('clearFilters');
-        const cartBtn = document.getElementById('cartBtn');
-        const cartModal = document.getElementById('cartModal');
-        const closeCart = document.getElementById('closeCart');
-        const cartItems = document.getElementById('cartItems');
-        const cartTotal = document.getElementById('cartTotal');
-        const clearCartBtn = document.getElementById('clearCart');
-        const cartCount = document.getElementById('cartCount');
+    let cart = [];
+    let filteredBooks = [...books];
 
-        function initializePage() {
-            renderBooks();
+    // DOM Elements
+    const booksGrid = document.getElementById('booksGrid');
+    const noResults = document.getElementById('noResults');
+    const bookCount = document.getElementById('bookCount');
+    const genreFilters = document.querySelectorAll('.genre-filter');
+    const ratingFilters = document.querySelectorAll('.rating-filter');
+    const priceRange = document.getElementById('priceRange');
+    const priceValue = document.getElementById('priceValue');
+    const sortSelect = document.getElementById('sortSelect');
+    const searchInput = document.getElementById('searchInput');
+    const clearFiltersBtn = document.getElementById('clearFilters');
+    const cartBtn = document.getElementById('cartBtn');
+    const cartModal = document.getElementById('cartModal');
+    const closeCart = document.getElementById('closeCart');
+    const cartItems = document.getElementById('cartItems');
+    const cartTotal = document.getElementById('cartTotal');
+    const clearCartBtn = document.getElementById('clearCart');
+    const cartCount = document.getElementById('cartCount');
+
+    function initializePage() {
+        renderBooks();
+    }
+
+    function filterAndSortBooks() {
+        let result = [...books];
+
+        // Genre filter
+        const selectedGenres = Array.from(genreFilters)
+            .filter(cb => cb.checked && cb.value !== 'all')
+            .map(cb => cb.value);
+
+        if (selectedGenres.length > 0) {
+            result = result.filter(book => selectedGenres.includes(book.genre));
         }
 
-        function filterAndSortBooks() {
-            let result = [...books];
+        // Price filter
+        result = result.filter(book => book.price <= parseFloat(priceRange.value));
 
-            // Genre filter
-            const selectedGenres = Array.from(genreFilters)
-                .filter(cb => cb.checked && cb.value !== 'all')
-                .map(cb => cb.value);
-            
-            if (selectedGenres.length > 0) {
-                result = result.filter(book => selectedGenres.includes(book.genre));
-            }
+        // Rating filter
+        const selectedRatings = Array.from(ratingFilters)
+            .filter(cb => cb.checked)
+            .map(cb => parseFloat(cb.value));
 
-            // Price filter
-            result = result.filter(book => book.price <= parseFloat(priceRange.value));
-
-            // Rating filter
-            const selectedRatings = Array.from(ratingFilters)
-                .filter(cb => cb.checked)
-                .map(cb => parseFloat(cb.value));
-            
-            if (selectedRatings.length > 0) {
-                result = result.filter(book => selectedRatings.some(rating => book.rating >= rating));
-            }
-
-            // Search filter
-            const searchTerm = searchInput.value.toLowerCase();
-            if (searchTerm) {
-                result = result.filter(book => 
-                    book.title.toLowerCase().includes(searchTerm) || 
-                    book.author.toLowerCase().includes(searchTerm)
-                );
-            }
-
-            // Sort
-            switch(sortSelect.value) {
-                case 'price-low':
-                    result.sort((a, b) => a.price - b.price);
-                    break;
-                case 'price-high':
-                    result.sort((a, b) => b.price - a.price);
-                    break;
-                case 'rating':
-                    result.sort((a, b) => b.rating - a.rating);
-                    break;
-                case 'newest':
-                    result.reverse();
-                    break;
-                default:
-                    break;
-            }
-
-            filteredBooks = result;
-            renderBooks();
+        if (selectedRatings.length > 0) {
+            result = result.filter(book => selectedRatings.some(rating => book.rating >= rating));
         }
 
-        function renderBooks() {
-            booksGrid.innerHTML = '';
-            bookCount.textContent = filteredBooks.length;
+        // Search filter
+        const searchTerm = searchInput.value.toLowerCase();
+        if (searchTerm) {
+            result = result.filter(book =>
+                book.title.toLowerCase().includes(searchTerm) ||
+                book.author.toLowerCase().includes(searchTerm)
+            );
+        }
 
-            if (filteredBooks.length === 0) {
-                noResults.classList.remove('hidden');
-                return;
-            }
+        // Sort
+        switch(sortSelect.value) {
+            case 'price-low':
+                result.sort((a, b) => a.price - b.price);
+                break;
+            case 'price-high':
+                result.sort((a, b) => b.price - a.price);
+                break;
+            case 'rating':
+                result.sort((a, b) => b.rating - a.rating);
+                break;
+            case 'newest':
+                result.reverse();
+                break;
+            default:
+                break;
+        }
 
-            noResults.classList.add('hidden');
+        filteredBooks = result;
+        renderBooks();
+    }
 
-            filteredBooks.forEach(book => {
-                const bookCard = document.createElement('div');
-                bookCard.className = 'bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition';
-                bookCard.innerHTML = `
+    function renderBooks() {
+        booksGrid.innerHTML = '';
+        bookCount.textContent = filteredBooks.length;
+
+        if (filteredBooks.length === 0) {
+            noResults.classList.remove('hidden');
+            return;
+        }
+
+        noResults.classList.add('hidden');
+
+        filteredBooks.forEach(book => {
+            const bookCard = document.createElement('div');
+            bookCard.className = 'bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition';
+            bookCard.innerHTML = `
                     <div class="relative overflow-hidden bg-gray-100 h-64">
                         <img src="${book.image}" alt="${book.title}" class="w-full h-full object-cover hover:scale-105 transition">
                         ${book.badge ? `<span class="absolute top-2 right-2 bg-amber-700 text-white text-xs px-3 py-1 rounded-full">${book.badge}</span>` : ''}
@@ -326,61 +326,61 @@
                             <span class="text-amber-700 font-semibold">$${book.price.toFixed(2)}</span>
                             <span class="text-sm text-gray-600">★${book.rating}</span>
                         </div>
-                        <button class="w-full bg-amber-700 text-white py-2 rounded-lg hover:bg-amber-800 transition font-semibold add-to-cart-btn" data-id="${book.id}">
+                        <button class="w-full bg-blue-200 text-black py-2 rounded-lg hover:bg-blue-500 transition font-semibold add-to-cart-btn" data-id="${book.id}">
                             Add to Cart
                         </button>
                     </div>
                 `;
-                booksGrid.appendChild(bookCard);
+            booksGrid.appendChild(bookCard);
+        });
+
+        // Add event listeners to add to cart buttons
+        document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const bookId = parseInt(e.target.dataset.id);
+                addToCart(bookId);
             });
+        });
+    }
 
-            // Add event listeners to add to cart buttons
-            document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const bookId = parseInt(e.target.dataset.id);
-                    addToCart(bookId);
-                });
-            });
+    function addToCart(bookId) {
+        const book = books.find(b => b.id === bookId);
+        const existingItem = cart.find(item => item.id === bookId);
+
+        if (existingItem) {
+            existingItem.quantity += 1;
+        } else {
+            cart.push({ ...book, quantity: 1 });
         }
 
-        function addToCart(bookId) {
-            const book = books.find(b => b.id === bookId);
-            const existingItem = cart.find(item => item.id === bookId);
+        updateCartDisplay();
+    }
 
-            if (existingItem) {
-                existingItem.quantity += 1;
-            } else {
-                cart.push({ ...book, quantity: 1 });
-            }
+    function removeFromCart(bookId) {
+        cart = cart.filter(item => item.id !== bookId);
+        updateCartDisplay();
+    }
 
-            updateCartDisplay();
+    function updateCartDisplay() {
+        cartCount.textContent = cart.reduce((total, item) => total + item.quantity, 0);
+        renderCartItems();
+    }
+
+    function renderCartItems() {
+        cartItems.innerHTML = '';
+        let total = 0;
+
+        if (cart.length === 0) {
+            cartItems.innerHTML = '<p class="text-gray-500 text-center py-8">Your cart is empty</p>';
+            cartTotal.textContent = '0.00';
+            return;
         }
 
-        function removeFromCart(bookId) {
-            cart = cart.filter(item => item.id !== bookId);
-            updateCartDisplay();
-        }
-
-        function updateCartDisplay() {
-            cartCount.textContent = cart.reduce((total, item) => total + item.quantity, 0);
-            renderCartItems();
-        }
-
-        function renderCartItems() {
-            cartItems.innerHTML = '';
-            let total = 0;
-
-            if (cart.length === 0) {
-                cartItems.innerHTML = '<p class="text-gray-500 text-center py-8">Your cart is empty</p>';
-                cartTotal.textContent = '0.00';
-                return;
-            }
-
-            cart.forEach(item => {
-                total += item.price * item.quantity;
-                const cartItem = document.createElement('div');
-                cartItem.className = 'flex justify-between items-center p-3 bg-gray-50 rounded';
-                cartItem.innerHTML = `
+        cart.forEach(item => {
+            total += item.price * item.quantity;
+            const cartItem = document.createElement('div');
+            cartItem.className = 'flex justify-between items-center p-3 bg-gray-50 rounded';
+            cartItem.innerHTML = `
                     <div class="flex-1">
                         <p class="font-semibold text-gray-900">${item.title}</p>
                         <p class="text-sm text-gray-600">Qty: ${item.quantity} × $${item.price.toFixed(2)}</p>
@@ -389,73 +389,73 @@
                         <i class="fas fa-trash"></i>
                     </button>
                 `;
-                cartItems.appendChild(cartItem);
-            });
+            cartItems.appendChild(cartItem);
+        });
 
-            cartTotal.textContent = total.toFixed(2);
+        cartTotal.textContent = total.toFixed(2);
 
-            // Add event listeners to remove buttons
-            document.querySelectorAll('.remove-from-cart-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    const bookId = parseInt(e.target.closest('button').dataset.id);
-                    removeFromCart(bookId);
-                });
-            });
-        }
-
-        // Event Listeners
-        genreFilters.forEach(filter => {
-            filter.addEventListener('change', () => {
-                if (filter.value === 'all' && filter.checked) {
-                    genreFilters.forEach(f => f.checked = f === filter);
-                }
-                filterAndSortBooks();
+        // Add event listeners to remove buttons
+        document.querySelectorAll('.remove-from-cart-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                const bookId = parseInt(e.target.closest('button').dataset.id);
+                removeFromCart(bookId);
             });
         });
+    }
 
-        ratingFilters.forEach(filter => {
-            filter.addEventListener('change', filterAndSortBooks);
-        });
-
-        priceRange.addEventListener('input', (e) => {
-            priceValue.textContent = e.target.value;
-            filterAndSortBooks();
-        });
-
-        sortSelect.addEventListener('change', filterAndSortBooks);
-        searchInput.addEventListener('input', filterAndSortBooks);
-
-        clearFiltersBtn.addEventListener('click', () => {
-            genreFilters.forEach(f => f.checked = f.value === 'all');
-            ratingFilters.forEach(f => f.checked = false);
-            priceRange.value = 50;
-            priceValue.textContent = 50;
-            searchInput.value = '';
-            sortSelect.value = 'featured';
-            filterAndSortBooks();
-        });
-
-        cartBtn.addEventListener('click', () => {
-            cartModal.classList.remove('hidden');
-        });
-
-        closeCart.addEventListener('click', () => {
-            cartModal.classList.add('hidden');
-        });
-
-        clearCartBtn.addEventListener('click', () => {
-            cart = [];
-            updateCartDisplay();
-        });
-
-        cartModal.addEventListener('click', (e) => {
-            if (e.target === cartModal) {
-                cartModal.classList.add('hidden');
+    // Event Listeners
+    genreFilters.forEach(filter => {
+        filter.addEventListener('change', () => {
+            if (filter.value === 'all' && filter.checked) {
+                genreFilters.forEach(f => f.checked = f === filter);
             }
+            filterAndSortBooks();
         });
+    });
 
-        // Initialize page
-        initializePage();
-    </script>
+    ratingFilters.forEach(filter => {
+        filter.addEventListener('change', filterAndSortBooks);
+    });
+
+    priceRange.addEventListener('input', (e) => {
+        priceValue.textContent = e.target.value;
+        filterAndSortBooks();
+    });
+
+    sortSelect.addEventListener('change', filterAndSortBooks);
+    searchInput.addEventListener('input', filterAndSortBooks);
+
+    clearFiltersBtn.addEventListener('click', () => {
+        genreFilters.forEach(f => f.checked = f.value === 'all');
+        ratingFilters.forEach(f => f.checked = false);
+        priceRange.value = 50;
+        priceValue.textContent = 50;
+        searchInput.value = '';
+        sortSelect.value = 'featured';
+        filterAndSortBooks();
+    });
+
+    cartBtn.addEventListener('click', () => {
+        cartModal.classList.remove('hidden');
+    });
+
+    closeCart.addEventListener('click', () => {
+        cartModal.classList.add('hidden');
+    });
+
+    clearCartBtn.addEventListener('click', () => {
+        cart = [];
+        updateCartDisplay();
+    });
+
+    cartModal.addEventListener('click', (e) => {
+        if (e.target === cartModal) {
+            cartModal.classList.add('hidden');
+        }
+    });
+
+    // Initialize page
+    initializePage();
+</script>
 </body>
 </html>
